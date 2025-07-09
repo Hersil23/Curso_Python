@@ -145,3 +145,5 @@ print(even_numbers)
 
 print(list(filter(lambda x: x % 2 == 0, numbers)))
 
+workbook = Workbook()
+workbook.save("funciones_orden_superior.xlsx")
