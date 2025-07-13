@@ -109,7 +109,7 @@ ejercicio 41 imprime los numeros del 10 al 1 en orden descendente
 for i in range(10, 0, -1):
   print(i)
 '''
-
+'''
 import random
 numero_secreto = random.randint(1, 20)
 intentos = 0
@@ -124,4 +124,36 @@ while True:
     print("El numero secreto es mayor.")
   else:
     print("El numero secreto es menor.")
-  
+'''
+''' pide un caracter y determina si es vocal 
+'''
+''' 
+caracter = input("Ingresa un caracter: ")
+vocales = ['a', 'e', 'i', 'o', 'u']
+if caracter.lower() in vocales:
+  print(f"El caracter es una vocal: {caracter}")
+'''
+'''
+numero = int(input("Ingrese un numero: "))
+contador = 0
+while numero !=0:
+  numero = numero // 10
+  contador += 1
+print(f"El numero tiene {contador} digitos.")
+'''
+
+while True:
+  print("1. Sumar")
+  print("2. Restar")    
+  print("3.- Salir")
+
+  opcion = input("Selecciona una opcion:) ")
+  if opcion == "1":
+    print("Has seleccionado Sumar")
+  elif opcion == "2":
+    print("Has seleccionado Restar")
+  elif opcion == "3":
+    print("Saliendo...")
+    break
+  else:
+    print("Opcion no valida. Intente de nuevo.")
