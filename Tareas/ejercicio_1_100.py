@@ -141,7 +141,7 @@ while numero !=0:
   contador += 1
 print(f"El numero tiene {contador} digitos.")
 '''
-
+'''
 while True:
   print("1. Sumar")
   print("2. Restar")    
@@ -157,3 +157,23 @@ while True:
     break
   else:
     print("Opcion no valida. Intente de nuevo.")
+  
+  '''
+''' 
+import random
+
+while True:
+    moneda = random.choice(["Cara", "Sello"])
+    apuesta = input("Apuesta a Cara o Sello (o escribe 'salir' para terminar): ").capitalize()
+    if apuesta == "Salir":
+        break
+    elif apuesta not in ["Cara", "Sello"]:
+        print("Apuesta no válida. Intente de nuevo.")
+        continue
+
+    print(f"La moneda ha salido: {moneda}")
+    if apuesta == moneda:
+        print("¡Felicidades! Has ganado.")
+    else:
+        print("Lo siento, has perdido.")
+'''
