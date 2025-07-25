@@ -16,6 +16,11 @@ users_db = [
 def get_users():
     return jsonify(users_db)
 
-#crear un endpoint para obtener un solo usuario
+#Solucion propuesta por Jean 
 
 @users_blueprint.route("/<int:user_id>")
+def get_user_by_id(user_id):
+    for user in users_db:
+        if user["id"] == user_id:
+            return jsonify(user)
+    return jsonify({"error": "Usuario no encontrado"}), 404
